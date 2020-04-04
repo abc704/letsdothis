@@ -63,10 +63,10 @@ for(let i=0;i<6000;i++) {
     star.acceleration = 0.02;
     starGeo.vertices.push(star);
 }
-let sprite = new THREE.TextureLoader().load( 'star1.png' );
+let sprite = new THREE.TextureLoader().load( 'star.png' );
 let starMaterial = new THREE.PointsMaterial({
   color: 0xaaaaaa,
-  size: 2,
+  size: 4,
   map: sprite
 });
 stars = new THREE.Points(starGeo,starMaterial);
